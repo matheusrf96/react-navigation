@@ -11,14 +11,14 @@ const Content = (props) => {
     return (
         <main className="content">
             <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
                 <Route path="/about">
                     <About />
                 </Route>
                 <Route path="/param/:id">
                     <Param />
-                </Route>
-                <Route path="/">
-                    <Home />
                 </Route>
             </Switch>
         </main>
